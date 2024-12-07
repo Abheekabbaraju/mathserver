@@ -1,5 +1,5 @@
 # Ex.05 Design a Website for Server Side Processing
-# Date:22/11/24
+# Date:2/12/24
 # AIM:
 To design a website to calculate the power of a lamp filament in an incandescent bulb in the server side.
 
@@ -151,7 +151,8 @@ Publish the website in the given URL.
 </html>
 ~~~
 # SERVER SIDE PROCESSING:
-![Screenshot (48)](https://github.com/user-attachments/assets/2006ece1-9d3e-4354-8e54-c155fe10eebb)
+![Screenshot (55)](https://github.com/user-attachments/assets/e2a276ab-8a16-4f0e-9782-7830fe1a49cb)
+
 
 # HOMEPAGE:
 ![Screenshot (49)](https://github.com/user-attachments/assets/64f5d409-da19-4bde-ab87-7094009e0c95)
