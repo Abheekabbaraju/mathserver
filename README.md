@@ -30,6 +30,35 @@ Publish the website in the given URL.
 
 # PROGRAM :
 ~~~
+views:
+from django.shortcuts import render
+
+def triangle_area(request):
+    area = None  # Initialize area to None for the first load
+    if request.method == "POST":
+        try:
+            base = float(request.POST.get("base"))
+            height = float(request.POST.get("height"))
+            area = 0.5 * base * height  # Calculate the area
+        except ValueError:
+            area = "Invalid input. Please enter numeric values."
+    
+    return render(request, "triangle_area.html", {"area": area})
+~~~
+~~~
+url:
+from django.contrib import admin
+from django.urls import path
+from app import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+     path('area/', views.triangle_area, name='triangle_area'),
+]
+
+~~~
+
+~~~
 <!DOCTYPE html>
 <html lang="en">
 <head>
